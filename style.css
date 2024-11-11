@@ -1,0 +1,133 @@
+.discount-container .close-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+}
+
+.discount-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: beige;
+    color: #fff;
+    font-family: "Inter", "sans-serif";
+    padding: 5px 0;
+    background: radial-gradient(
+    circle 610px at 5.2% 51%, /* Circle of 610px radius positioned at 5.2% left and 51% top */
+    rgb(255, 153, 153) 20%,   /* Light red at 20% */
+    rgb(255, 51, 51) 50%,     /* Medium red at 50% */
+    rgb(179, 20, 20) 80%      /* Slightly lighter dark red at 80% */
+);
+
+}
+
+.discount-container .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.discount-container .discount-heading {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.discount-container .discount-subheading {
+    font-size: 18px;
+}
+
+.discount-container .countdown-timer {
+    display: flex;
+    gap: 16px;
+}
+
+.discount-container .group {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 6px;
+}
+
+.countdown-timer .value {
+    background: #fff;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+    width: 24px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.countdown-timer .unit{
+    font-size: 16px;
+}
+
+.discount-container .discount-btn {
+    padding: 18px 24px;
+    background: rgb(99, 251, 215);
+    background-image: linear-gradient(
+      68deg,
+      rgb(99, 251, 215) 0%,
+      rgb(5, 222, 250) 100%
+    );
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 400ms ease;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .discount-container .discount-btn:hover {
+    transform: scale(1.03);
+  }
+
+  .discount-container .close-btn {
+    position: fixed;
+    top: 2px;
+    right: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    transition: all 400ms ease;
+  }
+
+  .discount-container .close-btn:hover {
+    transform: scale(1.2); /* Increase size by 10% */
+  }
+
+  @media (max-width: 800px) {
+    .discount-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .discount-container .close-btn {
+        top: 5px;
+        right: 10px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .discount-container {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        gap: 16px;
+    }
+    .discount-container .close-btn {
+        top: 2px;
+        right: 5px;
+    }
+  }
